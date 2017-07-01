@@ -1,0 +1,34 @@
+!important
+body {
+  background: rgba(173, 192, 206, .3);
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.menu li {
+  display: inline;
+  font-size: 15pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info {
+  font-size: 13pt;
+}
+
+.clear {
+  clear: both;
+}
+
+.i_img {
+  float: left;
+}
+
+footer {
+  float: right;
+}
