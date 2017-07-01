@@ -1,9 +1,4 @@
-!important
-body {
-  background: rgba(173, 192, 206, .3);
-}
-
-ul {
+!important ul {
   list-style: none;
   margin: 0 auto;
 }
@@ -11,6 +6,10 @@ ul {
 .menu li {
   display: inline;
   font-size: 15pt;
+}
+
+.zag {
+  text-align: center;
 }
 
 a {
@@ -27,8 +26,32 @@ a {
 
 .i_img {
   float: left;
+  margin: 10px;
+  height: 400px;
+  background-size: cover;
 }
 
 footer {
-  float: right;
+  text-align: center;
+}
+
+.cat {
+  text-align: center;
+  font-size: 13pt;
+}
+
+.wrapper {
+  float: left;
+}
+.image img {
+  width: 300px;
+
+}
+.annotation {
+  text-align: center;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0;
 }
