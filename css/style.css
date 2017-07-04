@@ -1,4 +1,13 @@
-!important ul {
+@font-face {
+  font-family: "vox-regular14";
+  src: url(../font/vox-regular14.ttf);
+}
+
+body{
+  background-color: #C8AC89;
+}
+
+ul {
   list-style: none;
   margin: 0 auto;
 }
@@ -6,6 +15,7 @@
 .menu li {
   display: inline;
   font-size: 15pt;
+  font-family: "vox-regular14";
 }
 
 .zag {
