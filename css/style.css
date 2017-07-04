@@ -3,27 +3,31 @@
   src: url(../font/vox-regular14.ttf);
 }
 
-body{
-  background-color: #C8AC89;
+body {
+  background-color: #ffffff;
 }
 
-ul {
-  list-style: none;
-  margin: 0 auto;
-}
-
-.menu li {
-  display: inline;
+.menu ul {
   font-size: 15pt;
   font-family: "vox-regular14";
+  text-align: center;
+  padding-left: 0%;
 }
 
-.zag {
-  text-align: center;
+li {
+  display: inline;
 }
 
-.zag {
+h1 {
   text-align: center;
+  font-family: "vox-regular14";
+  background-color: rgb(27, 164, 214);
+  text-align: center;
+  left: 0;
+  padding: 22px;
+  bottom: 0;
+  width: 100%;
+  position: inherit;
 }
 
 a {
@@ -38,29 +42,15 @@ a {
   clear: both;
 }
 
-.i_img {
-  float: left;
-  margin: 10px;
-  height: 400px;
-  background-size: cover;
-}
-
-footer {
-  text-align: center;
-}
-
-.cat {
-  text-align: center;
-  font-size: 13pt;
-}
-
 .wrapper {
   float: left;
 }
-.image img {
-  width: 300px;
 
+.image img {
+  height: 300px;
+  margin: 20px;
 }
+
 .annotation {
   text-align: center;
   font-family: Arial;
@@ -68,10 +58,26 @@ footer {
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 0;
-  background-color: rgb(90, 182, 207);
+}
+
+.i_img img {
+  float: left;
+  margin: 10px;
+  height: 500px;
+  background-size: cover;
+}
+
+footer {
+  background-color: rgb(27, 164, 214);
   position: fixed;
-  padding: 20px;
+  text-align: center;
+  left: 0;
+  padding: 10px;
+  bottom: 0;
   width: 100%;
-  left: 0px;
-  bottom: 0px
+}
+
+.cat {
+  text-align: center;
+  font-size: 13pt;
 }
