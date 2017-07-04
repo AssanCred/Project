@@ -1,71 +1,9 @@
-@font-face {
-  font-family: "vox-regular14";
-  src: url(../font/vox-regular14.ttf);
-}
-
-body{
-  background-color: #C8AC89;
-}
-
-ul {
-  list-style: none;
-  margin: 0 auto;
-}
-
-.menu li {
-  display: inline;
-  font-size: 15pt;
-  font-family: "vox-regular14";
-}
-
-.zag {
-  text-align: center;
-}
-
-.zag {
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-}
-
-.info {
-  font-size: 13pt;
-}
-
-.clear {
-  clear: both;
-}
-
-.i_img {
-  float: left;
-  margin: 10px;
-  height: 400px;
-  background-size: cover;
-}
-
 footer {
   text-align: center;
-}
-
-.cat {
-  text-align: center;
-  font-size: 13pt;
-}
-
-.wrapper {
-  float: left;
-}
-.image img {
-  width: 300px;
-
-}
-.annotation {
-  text-align: center;
-  font-family: Arial;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px 0;
+  background-color: rgb(90, 182, 207);
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  left: 0px;
+  bottom: 0px
 }
