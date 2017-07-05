@@ -13,7 +13,28 @@
   src: url(../font/vox-regular15.ttf);
 }
 
-.menu ul {
+@font-face {
+  font-family: "vcricketnormal";
+  src: url(../font/cricketnormal.ttf);
+}
+
+.bat a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.bat a {
+  background: rgb(27, 164, 214);
+  transition: all 1s ease;
+  margin: auto;
+  width: 150px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.bat, .menu ul {
   font-size: 15pt;
   font-family: "vox-regular15";
   text-align: center;
@@ -28,6 +49,10 @@ li {
 }
 
 li:hover {
+  background: green;
+}
+
+.bat a:hover {
   background: green;
 }
 
@@ -49,6 +74,7 @@ header, h1 {
 
 .info {
   font-size: 13pt;
+  text-align: justify;
 }
 
 .clear {
@@ -60,7 +86,7 @@ header, h1 {
 }
 
 .image img {
-  height: 300px;
+  height: 200px;
   margin: 20px;
 }
 
@@ -81,7 +107,7 @@ header, h1 {
 }
 
 .h_img img {
-  height: 500px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -96,4 +122,13 @@ footer {
   text-align: center;
   font-size: 13pt;
   font-family: "mvideolight";
+}
+
+.ent, #firstname, #email, #team, #about, select {
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  font-size: 13px;
+  font-family: "vcricketnormal";
+  left: 0%;
 }
