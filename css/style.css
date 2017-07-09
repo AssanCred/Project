@@ -18,6 +18,21 @@
   src: url(../font/cricketnormal.ttf);
 }
 
+@font-face {
+  font-family: "orbitron-ligh";
+  src: url(../font/orbitron-ligh.ttf);
+}
+
+@font-face {
+  font-family: "segoeui-semilight";
+  src: url(../font/segoeui-semilight.ttf);
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+}
+
 .logo {
   float: left;
   width: 0px;
@@ -30,62 +45,53 @@
   transform: scale(-1, 1);
 }
 
-.menu div, .bat a {
+.menu a, .bat a {
   color: black;
   text-decoration: none;
   background-color: rgb(27, 164, 214);
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   margin: auto;
   width: 150px;
   margin-bottom: 20px;
   display: block;
 }
 
-.bat, .menu div {
+.bat, .menu a {
   font-size: 15pt;
   font-family: "vox-regular15";
   text-align: center;
   padding-left: 0%;
 }
 
-.menu div {
-  font-size: 20px;
+.menu a {
   display: inline;
   background-color: rgb(27, 164, 214);
   padding: 10px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
-.menu div a {
+.url_cat, .menu a {
   color: black;
   text-decoration: none;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
-.menu div a:hover {
-  color: white;
-}
-
-.menu div:hover {
-  background-color: green;
-}
-
-.bat a:hover, i a:hover {
-  background: green;
-  color: white;
+h2, .header, h1 {
+  text-align: center;
 }
 
 .header, h1 {
-  text-align: center;
   font-family: "vox-regular14";
   background-color: rgb(27, 164, 214);
   padding: 6px;
   position: static;
 }
 
-.info {
+.info, .info_cat {
   font-size: 13pt;
   text-align: justify;
+  width: inherit;
+  display: inline;
 }
 
 .clear {
@@ -95,15 +101,21 @@
 .wrapper {
   float: left;
   margin: 5px;
+  border: 2px solid white;
+  width: 200px;
+  transition: all 0.5s ease;
 }
 
 .wrapper:hover {
-  border-style: groove;
+  border: 2px solid black;
 }
 
 .image img {
-  height: 200px;
-  margin: 20px;
+  height: 150px;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .annotation {
@@ -115,16 +127,23 @@
   padding: 10px 0;
 }
 
+.wrapper:hover, .bat a:hover {
+  text-decoration: underline;
+}
+
 .i_img {
   float: left;
-  margin: 10px;
-  height: 500px;
+  margin-bottom: 1em;
   background-size: contain;
 }
 
+.i_img img {
+  height: 450px;
+}
+
 .h_img img {
-  height: 400px;
-  margin: 20px;
+  width: 375px;
+  margin: 5px;
 }
 
 .footer {
@@ -135,21 +154,34 @@
   position: static;
 }
 
-.cat {
+.cat, legend {
   text-align: center;
   font-size: 13pt;
   font-family: "mvideolight";
 }
 
-.ent, #firstname, #email, #team, #about, select {
-  width: 400px;
-  margin: auto;
-  padding: 10px;
+.news {
+  float: left;
+}
+
+ .ent, #firstname, #email, #team, #about, select {
+  float: left;
+  width: 350px;
+  display: block;
   font-size: 13px;
-  font-family: "vcricketnormal";
-  left: 0%;
   resize: none;
   margin-bottom: 10px;
+}
+
+form {
+  padding-right: 80px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+p {
+  font-family: "segoeui-semilight";
 }
 
 #firstname:focus, #email:focus, #team:focus, #about:focus {
@@ -158,7 +190,36 @@
   font-size: 20px;
 }
 
-p::first-letter {
+#firstname:valid, #email:valid, #team:valid, #about:valid {
+  text-transform: capitalize;
+}
+
+.info_cat p::first-letter {
   font-size: 25px;
   color: green;
+  font-family: "orbitron-ligh";
+}
+
+.menu a:hover {
+  color: white;
+}
+
+.menu a:hover {
+  background-color: green;
+}
+
+.bat a:hover, i a:hover {
+  background: green;
+  color: white;
+}
+
+table {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  border-top: 1.5px solid black;
+}
+
+table, tr, td {
+  vertical-align: top;
 }
