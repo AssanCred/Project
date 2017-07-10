@@ -164,7 +164,7 @@ h2, .header, h1 {
   float: left;
 }
 
- .ent, #firstname, #email, #team, #about, select {
+.ent, #firstname, #email, #team, #about, select {
   float: left;
   width: 350px;
   display: block;
