@@ -1,132 +1,267 @@
-@font-face {
-  font-family: "vox-regular14";
-  src: url(../font/vox-regular14.ttf);
-}
+  @font-face {
+    font-family: "vox-regular14";
+    src: url(../font/vox-regular14.ttf);
+  }
 
-@font-face {
-  font-family: "mvideolight";
-  src: url(../font/mvideolight.ttf);
-}
+  @font-face {
+    font-family: "mvideolight";
+    src: url(../font/mvideolight.ttf);
+  }
 
-@font-face {
-  font-family: "vox-regular15";
-  src: url(../font/vox-regular15.ttf);
-}
+  @font-face {
+    font-family: "vox-regular15";
+    src: url(../font/vox-regular15.ttf);
+  }
 
-@font-face {
-  font-family: "vcricketnormal";
-  src: url(../font/cricketnormal.ttf);
-}
+  @font-face {
+    font-family: "vcricketnormal";
+    src: url(../font/cricketnormal.ttf);
+  }
 
-.bat a {
-  color: black;
-  text-decoration: none;
-}
+  @font-face {
+    font-family: "orbitron-ligh";
+    src: url(../font/orbitron-ligh.ttf);
+  }
 
-.bat a {
-  background: rgb(27, 164, 214);
-  transition: all 1s ease;
-  margin: auto;
-  width: 150px;
-  margin-bottom: 20px;
-  display: block;
-}
+  @font-face {
+    font-family: "segoeui-semilight";
+    src: url(../font/segoeui-semilight.ttf);
+  }
 
-.bat, .menu ul {
-  font-size: 15pt;
-  font-family: "vox-regular15";
-  text-align: center;
-  padding-left: 0%;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-li {
-  display: inline;
-  background: rgb(27, 164, 214);
-  padding: 10px;
-  transition: all 1s ease;
-}
+  article {
+    flex: 100%;
+  }
 
-li:hover {
-  background: green;
-}
+  .container {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+  }
 
-.bat a:hover {
-  background: green;
-}
+  .menu a, .bat_price a, .bat a {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(27, 164, 214);
+    transition: all 0.5s ease;
+    margin: auto;
+    width: 150px;
+    margin-bottom: 20px;
+    display: block;
+  }
 
-li a {
-  color: black;
-  text-decoration: none;
-}
+  .bat_price, .bat, .menu a {
+    font-size: 15pt;
+    font-family: "vox-regular15";
+    text-align: center;
+  }
 
-header, h1 {
-  text-align: center;
-  font-family: "vox-regular14";
-  background-color: rgb(27, 164, 214);
-  text-align: center;
-  left: 0;
-  padding: 1px;
-  bottom: 0;
-  position: inherit;
-}
+  .bat_price {
+    padding-left: 83%;
+  }
 
-.info {
-  font-size: 13pt;
-  text-align: justify;
-}
+  .bat, .menu a {
+    font-size: 15pt;
+    font-family: "vox-regular15";
+    text-align: center;
+    padding-left: 0%;
+  }
 
-.clear {
-  clear: both;
-}
+  .menu a {
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    transition: all 0.5s ease;
+  }
 
-.wrapper {
-  float: left;
-}
+  .url_cat, .menu a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
 
-.image img {
-  height: 200px;
-  margin: 20px;
-}
+  h2, header, h1 {
+    text-align: center;
+  }
 
-.annotation {
-  text-align: center;
-  font-family: Arial;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px 0;
-}
+  header {
+    background: url(../image/logo_menu.png) no-repeat;
+    height: 125px;
+    border-bottom: 1.5px solid rgb(27, 164, 214);
+  }
 
-.i_img {
-  float: left;
-  margin: 10px;
-  height: 500px;
-  background-size: contain;
-}
+  header, h1 {
+    font-family: "vox-regular14";
+    padding: 6px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.4);
 
-.h_img img {
-  height: 400px;
-  margin: 20px;
-}
+  }
 
-footer {
-  background-color: rgb(27, 164, 214);
-  text-align: center;
-  padding: 10px;
-  bottom: 0;
-}
 
-.cat {
-  text-align: center;
-  font-size: 13pt;
-  font-family: "mvideolight";
-}
+  .main {
+    position: relative;
+  }
 
-.ent, #firstname, #email, #team, #about, select {
-  width: 400px;
-  margin: auto;
-  padding: 10px;
-  font-size: 13px;
-  font-family: "vcricketnormal";
-  left: 0%;
-}
+  .info, .info_cat {
+    font-size: 13pt;
+    text-align: justify;
+    width: inherit;
+    display: inline;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .wrapper {
+    float: left;
+    margin: 5px;
+    border: 2px solid white;
+    width: 200px;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper:hover {
+    border: 2px solid black;
+  }
+
+  .image img {
+    height: 150px;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .annotation {
+    text-align: center;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+
+  .wrapper:hover, .bat a:hover {
+    text-decoration: underline;
+  }
+
+  .i_img {
+    float: left;
+    margin-bottom: 1em;
+    background-size: contain;
+  }
+
+  .i_img img {
+    height: 450px;
+  }
+
+  .h_img img {
+    width: 375px;
+    margin: 5px;
+  }
+
+  footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: static;
+    height: 50px;
+    background-image: url(../image/logo_menu_f.png);
+    border-top: 1.5px solid rgb(27, 164, 214);
+  }
+
+  .cat, legend {
+    text-align: center;
+    font-size: 13pt;
+    font-family: "mvideolight";
+  }
+
+  .ent, #firstname, #email, #team, #about, select {
+    width: 350px;
+    font-size: 13px;
+    resize: none;
+    margin-bottom: 10px;
+  }
+
+  .ent {
+    float: left;
+    display: block;
+    margin-right: 50px;
+  }
+
+  form {
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
+  p {
+    font-family: "segoeui-semilight";
+  }
+
+  #firstname:focus, #email:focus, #team:focus, #about:focus {
+    background-color: rgb(27, 164, 214);
+    color: white;
+  }
+
+  #firstname:valid, #email:valid, #team:valid, #about:valid {
+    text-transform: capitalize;
+  }
+
+  .info_cat p::first-letter {
+    font-size: 25px;
+    color: green;
+    font-family: "orbitron-ligh";
+  }
+
+  .menu a:hover {
+    color: white;
+  }
+
+  .menu a:hover {
+    background-color: green;
+  }
+
+  .bat_price a:hover, .bat a:hover, i a:hover {
+    background: green;
+    color: white;
+  }
+
+  table {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-top: 1.5px solid black;
+  }
+
+  table, tr, td {
+    vertical-align: top;
+  }
+
+  .baner a img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    display: block;
+  }
+
+  .img_price a img {
+    width: 300px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .info_cat {
+    width: 560px;
+    display: inline-block;
+  }
