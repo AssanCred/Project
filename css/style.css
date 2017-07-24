@@ -29,8 +29,21 @@
   }
 
   body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  article {
+    flex: 100%;
+  }
+
+  .container {
     width: 900px;
     margin: 0 auto;
+    position: relative;
   }
 
   .menu a, .bat_price a, .bat a {
@@ -74,23 +87,26 @@
     transition: all 0.5s ease;
   }
 
-  h2, .header, h1 {
-    text-align: right;
+  h2, header, h1 {
+    text-align: center;
   }
 
-  .header {
-    background-image: url(../image/logo_menu.png);
+  header {
+    background: url(../image/logo_menu.png) no-repeat;
     height: 125px;
-    display: flex;
-    justify-content: flex-end;
     border-bottom: 1.5px solid rgb(27, 164, 214);
   }
 
-  .header, h1 {
+  header, h1 {
     font-family: "vox-regular14";
-    padding: 6px;
-    position: inherit;
+    padding: 6px 0 0 0;
     background-color: rgba(255, 255, 255, 0.4);
+
+  }
+
+
+  .main {
+    position: relative;
   }
 
   .info, .info_cat {
@@ -152,7 +168,7 @@
     margin: 5px;
   }
 
-  .footer {
+  footer {
     padding: 10px;
     display: flex;
     justify-content: flex-end;
@@ -176,11 +192,10 @@
     margin-bottom: 10px;
   }
 
-  .ent{
+  .ent {
     float: left;
     display: block;
     margin-right: 50px;
-
   }
 
   form {
